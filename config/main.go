@@ -15,6 +15,9 @@ type Config struct {
 		Uri    string `env:"MONGO_URI"`
 		DbName string `env:"MONGO_DB_NAME"`
 	}
+	Secret struct {
+		Cipher string `env:"CIPHER_SECRET"`
+	}
 }
 
 func New() *Config {
